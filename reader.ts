@@ -11,30 +11,5 @@ const myArray=getrawData()
 const myData=myArray[0]
 
 
-async function areafilter() { 
-   
 
-    const payload = await myData;
-    //seperates arrays in json into seperate objects
-   //filters will be tweaked to suit ideal parameters
-    let filterList = payload.filter((eventData) => {
-        eventData.AREAS.length() >1; { return eventData}   
-    })
-    return filterList;
-    }
-
- async function timeFilter() { 
-   
-
-        const payload = await areafilter();
-        //seperates arrays in json into seperate objects
-       //filters will be tweaked to suit ideal parameters
-        let filterList = payload.filter((eventData) => {
-            eventData.TIMES.excludes("Time"); { return eventData}   
-        })
-        return filterList;
-        }
-    
-    
-const filteredList=timeFilter()
-console.log(filteredList)
+console.log(myArray)
