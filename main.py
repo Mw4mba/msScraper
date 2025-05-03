@@ -29,5 +29,6 @@ print(newJson)
 print(len(newJson))
 with open("sample.json", "w+") as outfile:
     json.dump(newJson, outfile)
+
 newJson.clear()  
 
