@@ -1,4 +1,4 @@
-const jsonSource= "sample.json";
+const jsonSource= "./sample.json";
 //const myJson=await fetch('sample.json')
 
 const getrawData = async () => {
