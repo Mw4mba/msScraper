@@ -2,9 +2,9 @@ const jsonSource= "sample.json";
 //const myJson=await fetch('sample.json')
 
 //this converts the json into an array type object that is useful for operations
-const getrawData = async () => {
-    const res = await fetch(jsonSource); //works on server but not on local file
-    const data = await  res.json();
+const getrawData =  () => {
+    const res =  fetch(jsonSource); //works on server but not on local file
+    const data =   res.json();
     return data
 }
 
